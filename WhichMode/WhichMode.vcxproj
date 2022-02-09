@@ -144,9 +144,11 @@
     <ClInclude Include="framework.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="UIModeHelpers.h" />
     <ClInclude Include="WhichMode.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="UIModeHelpers.cpp" />
     <ClCompile Include="WhichMode.cpp" />
   </ItemGroup>
   <ItemGroup>

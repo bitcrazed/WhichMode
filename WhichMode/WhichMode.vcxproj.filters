@@ -27,9 +27,15 @@
     <ClInclude Include="WhichMode.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="UIModeHelpers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="WhichMode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UIModeHelpers.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
