@@ -217,7 +217,7 @@ COLORREF GetBackgroundColor()
 {
     //// Error checking has been elided for expository purposes.
     wrl::ComPtr<abi_vm::IUISettings3> settings;
-    wf::ActivateInstance(wrl::Wrappers::HStringReference(RuntimeClass_Windows_UI_ViewManagement_UIViewSettings).Get(), &settings);
+    wf::ActivateInstance(wrl::Wrappers::HStringReference(RuntimeClass_Windows_UI_ViewManagement_UISettings).Get(), &settings);
     ABI::Windows::UI::Color color;
     settings->GetColorValue(abi_vm::UIColorType_Background, &color);
     
