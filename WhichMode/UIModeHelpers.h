@@ -31,3 +31,10 @@ COLORREF    GetUIForegroundColor();
 /// </summary>
 /// <returns>COLORREF (0xAARRGGBB) value of color</returns>
 COLORREF    GetUIColorValue(int colorType);
+
+/// <summary>
+/// Calculates percieved luminance of ARGB color
+/// </summary>
+/// <param name="argbColor">ARGB color packed into long</param>
+/// <returns>Percieved luminance value from 0 to 255</returns>
+double CalculatePercievedLuminance(DWORD argbColor);

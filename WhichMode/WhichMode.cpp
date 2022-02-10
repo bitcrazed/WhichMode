@@ -158,6 +158,8 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 		RECT rcClient{};
 		COLORREF origBrushColor{ GetDCBrushColor(ps.hdc) };
 
+		BOOL test = IsSystemUIDarkMode();
+
 		if (GetClientRect(hWnd, &rcClient))
 		{
 			// Fill the client area with the current theme's background color:
