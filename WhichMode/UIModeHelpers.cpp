@@ -9,7 +9,7 @@ BOOL IsSystemUIDarkMode()
 {
 	DWORD background{ GetUIBackgroundColor() };
 
-	BOOL luminance = CalculatePercievedLuminance(background);
+	double luminance = CalculatePercievedLuminance(background);
 	return luminance < 127;
 };
 
@@ -51,7 +51,7 @@ COLORREF GetUIColorValue(int colorType)
 	}
 
 	// Convert color struct into COLORREF (DWORD), discarding A:
-	COLORREF result{ DWORD(0x00 << 24 | color.R << 16 | color.G << 8 | color.B) };
+	COLORREF result{ static_cast<DWORD>((0x00 << 24 | color.R << 16 | color.G << 8 | color.B)) };
 
 	return result;
 }
